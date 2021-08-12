@@ -11,4 +11,4 @@ function renderCountryCard(country) {
     refs.countryContainer.insertAdjacentHTML('beforeend', markup);
 }
 
-export default updateMarkupCountries;
+export default renderCountryCard;

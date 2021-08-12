@@ -9,6 +9,6 @@
     .then(renderCountryCard)
     .catch(error => console.log(error));
 }
-fetchCountries('Canada');
+
 
 export default fetchCountries;

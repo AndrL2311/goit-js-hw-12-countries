@@ -1,2 +1,2 @@
 import './styles.css';
-import './js/fetchCountries.js';
+import search from './js/search';

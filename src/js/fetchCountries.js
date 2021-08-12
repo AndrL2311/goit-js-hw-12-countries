@@ -1,8 +1,3 @@
-console.log("Hi");
-import countryTpl from '../templates/country.hbs';
-import listOfCountriesTpl from '../templates/listOfCountries.hbs';
-import refs from './refs';
-
 
   function fetchCountries(country) {
   const url = `https://restcountries.eu/rest/v2/name/${country}`;
@@ -16,14 +11,4 @@ import refs from './refs';
 }
 fetchCountries('Canada');
 
-
-
-// блок добавления html
-// console.log(refs.countryContainer);
-
-function renderCountryCard(country) {
-    console.log(country);
-    const markup = countryTpl(country);
-// const markup = listOfCountriesTpl();
-    refs.countryContainer.insertAdjacentHTML('beforeend', markup);
-}
+export default fetchCountries;

@@ -1,7 +1,7 @@
 console.log("Hi");
 import countryTpl from '../templates/country.hbs';
 import listOfCountriesTpl from '../templates/listOfCountries.hbs';
-
+import refs from './refs';
 
 
   function fetchCountries(country) {
@@ -16,11 +16,6 @@ import listOfCountriesTpl from '../templates/listOfCountries.hbs';
 }
 fetchCountries('Canada');
 
-// блок ссылок
-const refs = {
-searchInput: document.querySelector('.search-input'),
-countryContainer: document.querySelector('.country-container'),
-};
 
 
 // блок добавления html

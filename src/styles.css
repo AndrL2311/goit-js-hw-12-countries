@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./images/bg-pattern.png');
+  /* background-image: url('./images/bg-pattern.png'); */
 }
 
 ul {
@@ -31,9 +31,9 @@ img {
   height: auto;
 }
 
-.search-form {
+/* .search-form {
   margin-bottom: 30px;
-}
+} */
 
 .country__info {
   display: flex;

@@ -6,7 +6,6 @@
         return response.json();
         // console.log(response.json());
     })
-    .then(renderCountryCard)
     .catch(error => console.log(error));
 }
 

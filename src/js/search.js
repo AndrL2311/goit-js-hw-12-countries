@@ -5,9 +5,16 @@ import debounce from 'lodash.debounce';
 
 refs.searchInput.addEventListener('input', debounce(search, 500));
 
-function search(Event)
-{
-    console.log('Я нашол');
+function search(event) {
+    const searchQuery = event.target.value;
+    // console.log('searchQuery', searchQuery);
+    clearSearchInput();
+    if (searchQuery !== '') {
+    return fetchCountries(searchQuery).then(renderCountryCard);
+  }
  };
 
+ function clearSearchInput() {
+  refs.countryContainer.innerHTML = '';
+}
 export default search;

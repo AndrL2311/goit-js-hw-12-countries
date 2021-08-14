@@ -2,15 +2,7 @@
 import refs from './refs';
 import countryTpl from '../templates/country.hbs';
 import listOfCountriesTpl from '../templates/listOfCountries.hbs';
-
-// импортируем PNotify
-import '@pnotify/core/dist/PNotify.css';
-import '@pnotify/desktop/dist/PNotifyDesktop';
-import '@pnotify/core/dist/BrightTheme.css';
-import { error } from '@pnotify/core';
-import '@pnotify/core/dist/PNotify.css';
-import '@pnotify/desktop/dist/PNotifyDesktop';
-import '@pnotify/core/dist/BrightTheme.css';
+import error from './pnotify';
 
 
 function renderCountryCard(data) {

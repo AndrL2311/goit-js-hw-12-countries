@@ -9,7 +9,8 @@ function search(event) {
     const searchQuery = event.target.value;
     // console.log('searchQuery', searchQuery);
     clearSearchInput();
-    if (searchQuery !== '') {
+    // if (searchQuery !== '') {
+       if (searchQuery.length > 1) {
     return fetchCountries(searchQuery).then(renderCountryCard);
   }
  };
